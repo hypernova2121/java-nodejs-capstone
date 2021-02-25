@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form action='/summary' method="POST">
+
+            <h1>Customer Info</h1>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            
+
+            <h1>Vehicle Info</h1>
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year"><br><br>
+            <label for="make">Make:</label>
+            <input type="text" id="make" name="make"><br><br>
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model"><br><br>
+
+            <h1>Claim Details</h1>
+            <label for="dateOfClaim">Date of claim:</label>
+            <input type="date" id="dateOfClaim" name="dateOfClaim"><br><br>
+            <label for="claimNumber">Claim number:</label>
+            <input type="text" id="claimNumber" name="claimNumber"><br><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description"><br><br>
+            <label for="claimApproved">Claim approved?</label>
+            <input type="checkbox" id="claimApproved" name="claimApproved" required><br><br>
+
+            <input type="submit" value="Submit"><br><br>
+
+          </form>
+    </body>
+</html>
