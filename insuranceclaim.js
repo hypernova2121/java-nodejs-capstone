@@ -3,11 +3,10 @@ class InsuranceClaim {
     constructor(dateOfClaim, claimNumber, description, claimApproved='No', insured, vehicle) {
         this.dateOfClaim = dateOfClaim
         this.claimNumber = claimNumber
-        this.description = description
+        this.description = description || 'N/A'
         this.claimApproved = claimApproved
         this.insured = insured
         this.vehicle = vehicle
-
     }
 
     toHTML() {
@@ -18,7 +17,7 @@ class InsuranceClaim {
             Date of claim: ${this.dateOfClaim}<br>
             Claim Number: ${this.claimNumber}<br>
             Description: ${this.description}<br>
-            Claim Approved?: ${this.claimApproved}<br>
+            Claim Approved?: ${this.claimApproved}<br><br>
             <div><a href="/">Go Home</a></div>
             `
         )
